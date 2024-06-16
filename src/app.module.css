@@ -1,0 +1,236 @@
+.floppy_disk {
+  @apply
+  p-8
+  flex
+  justify-center
+  items-center
+}
+
+.card {
+  @apply
+  w-80
+  h-80
+  relative
+  rounded-md
+  bg-gradient-to-br
+  from-zinc-900
+  via-zinc-800
+  to-zinc-500
+  shadow-[7px_7px_10px_rgba(0,_0,_0,_0.307)]
+}
+
+.top {
+  @apply
+  absolute
+  w-[65%]
+  h-[37%]
+  top-0
+  left-[37px]
+  z-40
+  border-t-4
+  border-t-zinc-800
+  border-[3px]
+  border-zinc-800
+  rounded-bl-[10px]
+  rounded-br-[10px]
+}
+
+.plastic {
+  @apply
+  absolute
+  top-0
+  right-[65px]
+  w-[65px]
+  h-full
+  bg-black
+  z-50
+  border-t-[25px]
+  border-t-white
+}
+
+.bottom {
+  @apply
+  z-50
+  absolute
+  right-1/2
+  bottom-[1px]
+  translate-x-1/2
+  translate-y-0
+  w-[75%]
+  h-[52%]
+  bg-amber-50
+  rounded-xl
+  rounded-tl
+  rounded-tr
+  border-red-800
+  border-t-2
+  border-r-2
+  border-l-2
+  border-b-transparent
+}
+
+.metal {
+  clip-path: polygon(0% 0%, 0% 100%, 60% 100%, 60% 18%, 85% 18%, 85% 93%, 25% 93%, 25% 100%, 100% 100%, 100% 0%);
+  @apply
+  z-[60]
+  absolute
+  -top-1
+  right-0
+  w-[78%]
+  h-[103%]
+  bg-gradient-to-br
+  from-zinc-300
+  via-zinc-400
+  to-zinc-500
+
+  rounded-bl-xl
+  rounded-br-xl
+
+  transition-all
+  duration-200
+  ease-in
+
+}
+
+.card:hover .metal {
+  @apply
+  translate-x-[-44px]
+}
+
+.square_right {
+  @apply
+  absolute
+  right-3
+  bottom-6
+  w-4
+  h-4
+  bg-zinc-100
+  border-2
+  border-zinc-800
+}
+
+.square_left {
+  @apply
+  absolute
+  left-3
+  bottom-6
+  w-4
+  h-4
+  bg-gradient-to-br
+  from-zinc-900
+  via-zinc-700
+  to-zinc-500
+  border-2
+  border-zinc-800
+}
+
+.line_color {
+  @apply
+  absolute
+  bottom-0
+  w-full
+  h-6
+  rounded-bl-lg
+  rounded-br-lg
+
+  bg-red-700
+}
+
+.line {
+  @apply
+  absolute
+  translate-x-1/2
+  right-1/2
+  h-3
+  bg-red-700
+}
+
+
+.line1 {
+  @apply
+  absolute
+  translate-x-1/2
+  right-[61%]
+  h-0.5
+  bg-red-700
+  bottom-[42px]
+  w-32
+}
+
+.line2 {
+  @apply
+  absolute
+  translate-x-1/2
+  bg-red-700
+  h-0.5
+  w-44
+  z-50
+  right-1/2
+  
+  bottom-[64px]
+}
+
+.line3 {
+  @apply
+  absolute
+  translate-x-1/2
+  bg-red-700
+  h-0.5
+  w-44
+  z-50
+  right-1/2
+  
+  bottom-[86px]
+}
+
+.line4 {
+  @apply
+  absolute
+  translate-x-1/2
+  bg-red-700
+  h-0.5
+  w-44
+  z-50
+  right-1/2
+  
+  bottom-[108px]
+}
+
+.line5 {
+  @apply
+  absolute
+  translate-x-1/2
+  bg-red-700
+  h-0.5
+  w-44
+  z-50
+  right-1/2
+  
+  bottom-[130px]
+}
+
+.line6 {
+  @apply
+  absolute
+  translate-x-1/2
+  
+  h-0.5
+  w-44
+  z-50
+  right-1/2
+  
+  bottom-[152px]
+}
+
+.index {
+  @apply
+  absolute
+  right-[62px]
+  bottom-[35px]
+  font-semibold
+  uppercase
+  text-red-700
+  text-xs
+  z-50
+}
+
