@@ -2,6 +2,9 @@
 
 Esse projeto vou criar um Floppy Disk com TailwindCSS
 
+![screen](./public/noproject/floppydisk_by_Brenno.gif)
+
+[Link do projeto na web](https://bcl-floppy-disk.vercel.app/)
 
 ### Techs e Libs
 

@@ -1,9 +1,30 @@
 .floppy_disk {
   @apply
+  w-screen
+  h-screen
   p-8
   flex
-  justify-center
+  flex-col
+  justify-around
   items-center
+
+  bg-[url("/surf_11.webp")]
+  bg-contain
+  bg-center
+}
+
+.signature {
+  @apply
+  p-8
+  font-surf
+  text-zinc-50/50
+  italic
+  text-7xl
+
+  xl:text-8xl
+  2xl:text-9xl
+
+  animate-pulse
 }
 
 .card {
@@ -13,10 +34,21 @@
   relative
   rounded-md
   bg-gradient-to-br
-  from-zinc-900
-  via-zinc-800
-  to-zinc-500
+  from-emerald-900
+  via-emerald-800/50
+  to-emerald-500/50
+  
   shadow-[7px_7px_10px_rgba(0,_0,_0,_0.307)]
+  lg:translate-x-1/2
+  
+  hover:skew-x-12
+  hover:rotate-12
+
+  transition-all
+  duration-300
+  ease-in
+
+  text-zinc-950
 }
 
 .top {
@@ -27,8 +59,8 @@
   top-0
   left-[37px]
   z-40
-  border-t-4
-  border-t-zinc-800
+  border-t-0
+  
   border-[3px]
   border-zinc-800
   rounded-bl-[10px]
@@ -41,14 +73,15 @@
   top-0
   right-[65px]
   w-[65px]
+
   h-full
-  bg-black
+  bg-pink-700/75
   z-50
   border-t-[25px]
-  border-t-white
+  border-t-emerald-500/50
 }
 
-.bottom {
+.tag {
   @apply
   z-50
   absolute
@@ -58,14 +91,19 @@
   translate-y-0
   w-[75%]
   h-[52%]
-  bg-amber-50
+  bg-gradient-to-br
+  from-yellow-400
+  via-yellow-300
+  to-yellow-200
+  
   rounded-xl
   rounded-tl
   rounded-tr
-  border-red-800
+  
   border-t-2
   border-r-2
   border-l-2
+  border-zinc-800
   border-b-transparent
 }
 
@@ -89,7 +127,6 @@
   transition-all
   duration-200
   ease-in
-
 }
 
 .card:hover .metal {
@@ -104,7 +141,7 @@
   bottom-6
   w-4
   h-4
-  bg-zinc-100
+  bg-transparent
   border-2
   border-zinc-800
 }
@@ -116,15 +153,11 @@
   bottom-6
   w-4
   h-4
-  bg-gradient-to-br
-  from-zinc-900
-  via-zinc-700
-  to-zinc-500
   border-2
   border-zinc-800
 }
 
-.line_color {
+.line_tag_bottom {
   @apply
   absolute
   bottom-0
@@ -133,104 +166,59 @@
   rounded-bl-lg
   rounded-br-lg
 
-  bg-red-700
+  bg-pink-700
 }
 
+.lines {
+  @apply
+  flex
+  flex-col
+  justify-center
+  items-center
+  
+  pt-2
+  px-4
+}
 .line {
   @apply
-  absolute
-  translate-x-1/2
-  right-1/2
-  h-3
-  bg-red-700
+  z-[65]
+  w-full
+  h-6
+  flex
+  items-center
+  
+  font-semibold
+  text-xl
+  text-zinc-700
+  font-surf
+  italic
+  
+  border-b-2
+  border-pink-700
 }
 
+.line_bottom {
+  @apply
+  w-full
+  flex
+  items-center
+  justify-around
+
+  gap-4
+  pt-[10px]
+}
 
 .line1 {
-  @apply
-  absolute
-  translate-x-1/2
-  right-[61%]
+  @apply  
+  w-full
   h-0.5
-  bg-red-700
-  bottom-[42px]
-  w-32
+  z-[65]
+  bg-pink-700
 }
 
-.line2 {
+.index_text {
   @apply
-  absolute
-  translate-x-1/2
-  bg-red-700
-  h-0.5
-  w-44
-  z-50
-  right-1/2
-  
-  bottom-[64px]
-}
-
-.line3 {
-  @apply
-  absolute
-  translate-x-1/2
-  bg-red-700
-  h-0.5
-  w-44
-  z-50
-  right-1/2
-  
-  bottom-[86px]
-}
-
-.line4 {
-  @apply
-  absolute
-  translate-x-1/2
-  bg-red-700
-  h-0.5
-  w-44
-  z-50
-  right-1/2
-  
-  bottom-[108px]
-}
-
-.line5 {
-  @apply
-  absolute
-  translate-x-1/2
-  bg-red-700
-  h-0.5
-  w-44
-  z-50
-  right-1/2
-  
-  bottom-[130px]
-}
-
-.line6 {
-  @apply
-  absolute
-  translate-x-1/2
-  
-  h-0.5
-  w-44
-  z-50
-  right-1/2
-  
-  bottom-[152px]
-}
-
-.index {
-  @apply
-  absolute
-  right-[62px]
-  bottom-[35px]
-  font-semibold
   uppercase
-  text-red-700
-  text-xs
-  z-50
+  font-semibold
+  text-pink-700
 }
-
